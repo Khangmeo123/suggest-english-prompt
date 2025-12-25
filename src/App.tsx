@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import SelectionCard from './components/SelectionCard';
 import PromptDisplay from './components/PromptDisplay';
+import InitialPrompt from './components/InitialPrompt';
 import { situations, levels, difficulties, styles } from './data/promptData';
 import type { Situation, Level, Difficulty, Style, PromptSelection } from './types';
 import './index.css';
@@ -31,6 +32,8 @@ function App() {
         <h1>🎯 English Learning Prompt Generator</h1>
         <p>Tạo prompt học giao tiếp tiếng Anh theo nhu cầu của bạn</p>
       </header>
+
+      <InitialPrompt />
 
       <div className="selection-grid">
         <SelectionCard<Situation>
